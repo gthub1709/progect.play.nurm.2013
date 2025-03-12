@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Хардкорная Игровая Викторина</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <h1 class="main-title">Хардкорная Игровая Викторина</h1>
+    
+    <div class="game-container">
+        <div class="game-info">
+            <div class="status-bar">
+                <span id="timer" class="timer">Время: 30с</span>
+                <span id="hints" class="hints">Подсказки: 3</span>
+            </div>
+            
+            <p id="hint" class="hint-text">Подсказка: </p>
+            
+            <div class="input-group">
+                <input type="text" id="user-input" placeholder="Введите название игры">
+                <button onclick="checkAnswer()" class="submit-btn">Проверить</button>
+                <button id="hint-btn" class="hint-btn">Использовать подсказку</button>
+            </div>
+
+            <div class="score-container">
+                <p id="currentScore">Текущий счёт: 0</p>
+                <p id="bestScore">Лучший счёт: 0</p>
+            </div>
+        </div>
+    </div>
+
+    <div class="message" id="message"></div>
+
+    <script src="script.js"></script>
+</body>
+</html>
